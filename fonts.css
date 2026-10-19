@@ -1,0 +1,6 @@
+/* Self-hosted brand fonts (SIL Open Font License 1.1). Paths are relative to this file.
+   On the live site, either copy source/fonts/ next to this file and keep these rules,
+   or replace this file with the Google Fonts link noted in tokens.css. */
+@font-face { font-family: "Montserrat"; src: url("site-assets/fonts/Montserrat[wght].ttf") format("truetype"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Sans 3"; src: url("site-assets/fonts/SourceSans3[wght].ttf") format("truetype"); font-weight: 200 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Sans 3"; src: url("site-assets/fonts/SourceSans3-Italic[wght].ttf") format("truetype"); font-weight: 200 900; font-style: italic; font-display: swap; }

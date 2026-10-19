@@ -1,0 +1,209 @@
+/* Williams Custom Carpentry — design tokens (Stage 4: color + typography foundations).
+   Generated from tokens.json. Fonts: Montserrat + Source Sans 3 (SIL OFL 1.1).
+   Load fonts, e.g. <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+   or self-host the files in source/fonts/. */
+
+:root {
+  /* ---- color primitives ---- */
+  --wcc-blue-500: #0A6FAE; /* Williams Blue */
+  --wcc-blue-600: #0A5A94; /* Deep Blue */
+  --wcc-blue-300: #0AA3E0; /* Sky Blue */
+  --wcc-blue-900: #16202B; /* Night */
+  --wcc-blue-50: #EAF4FB; /* Blue Mist */
+  --wcc-auburn-500: #CC4A1C; /* Bright Auburn */
+  --wcc-auburn-600: #A83C16; /* Auburn Dark */
+  --wcc-auburn-300: #F08A62; /* Auburn Glow */
+  --wcc-auburn-50: #FCEEE8; /* Auburn Mist */
+  --wcc-white: #FFFFFF; /* White */
+  --wcc-gray-50: #F5F7F9; /* Cloud */
+  --wcc-gray-100: #EBEFF3; /* Mist Gray */
+  --wcc-gray-200: #D6DCE2; /* Hairline */
+  --wcc-gray-300: #B9C1C9; /* Fog */
+  --wcc-gray-400: #98A1AB; /* Pewter */
+  --wcc-gray-500: #7B848E; /* Steel */
+  --wcc-gray-600: #555D67; /* Slate */
+  --wcc-charcoal: #3D4045; /* Charcoal */
+  --wcc-ink: #24282D; /* Ink */
+  --wcc-success-600: #1E7A46; /* Success */
+  --wcc-success-50: #E8F5EE; /* Success Tint */
+  --wcc-warning-600: #8A5A00; /* Warning */
+  --wcc-warning-50: #FFF5DB; /* Warning Tint */
+  --wcc-error-600: #B4234A; /* Error */
+  --wcc-error-50: #FCEBEF; /* Error Tint */
+  --wcc-gradient-logo: linear-gradient(180deg, #0AA3E0 0%, #0A5A94 100%);
+  --wcc-gradient-logo-on-dark: linear-gradient(180deg, #38BDF0 0%, #1C86C9 100%);
+
+  /* ---- semantic roles (use these in components) ---- */
+  --wcc-bg-page: var(--wcc-white);
+  --wcc-bg-subtle: var(--wcc-gray-50);
+  --wcc-bg-muted: var(--wcc-gray-100);
+  --wcc-bg-brand-tint: var(--wcc-blue-50);
+  --wcc-bg-inverse: var(--wcc-blue-900);
+  --wcc-bg-brand: var(--wcc-blue-600);
+  --wcc-text-primary: var(--wcc-ink);
+  --wcc-text-heading: var(--wcc-charcoal);
+  --wcc-text-secondary: var(--wcc-gray-600);
+  --wcc-text-disabled: var(--wcc-gray-400);
+  --wcc-text-brand: var(--wcc-blue-500);
+  --wcc-text-accent: var(--wcc-auburn-600);
+  --wcc-text-on-dark: var(--wcc-white);
+  --wcc-text-on-dark-secondary: var(--wcc-gray-300);
+  --wcc-text-on-dark-accent: var(--wcc-auburn-300);
+  --wcc-link: var(--wcc-blue-500);
+  --wcc-link-hover: var(--wcc-blue-600);
+  --wcc-border-subtle: var(--wcc-gray-200);
+  --wcc-border-control: var(--wcc-gray-500);
+  --wcc-border-strong: var(--wcc-charcoal);
+  --wcc-focus-ring: var(--wcc-blue-500);
+  --wcc-action-primary: var(--wcc-auburn-500);
+  --wcc-action-primary-hover: var(--wcc-auburn-600);
+  --wcc-action-primary-text: var(--wcc-white);
+  --wcc-action-secondary: var(--wcc-blue-500);
+  --wcc-action-secondary-hover: var(--wcc-blue-600);
+  --wcc-action-secondary-text: var(--wcc-blue-500);
+  --wcc-accent-rule: var(--wcc-auburn-500);
+  --wcc-icon: var(--wcc-blue-500);
+  --wcc-icon-muted: var(--wcc-gray-600);
+  --wcc-success: var(--wcc-success-600);
+  --wcc-success-bg: var(--wcc-success-50);
+  --wcc-warning: var(--wcc-warning-600);
+  --wcc-warning-bg: var(--wcc-warning-50);
+  --wcc-error: var(--wcc-error-600);
+  --wcc-error-bg: var(--wcc-error-50);
+  --wcc-info: var(--wcc-blue-500);
+  --wcc-info-bg: var(--wcc-blue-50);
+
+  /* ---- type ---- */
+  --wcc-font-heading: "Montserrat", "Avenir Next", "Segoe UI", Arial, sans-serif;
+  --wcc-font-body: "Source Sans 3", "Source Sans Pro", "Segoe UI", Roboto, Arial, sans-serif;
+  --wcc-size-display: clamp(2.25rem, 1.732rem + 2.21vw, 3.5rem);
+  --wcc-size-h1: clamp(2rem, 1.689rem + 1.326vw, 2.75rem);
+  --wcc-size-h2: clamp(1.688rem, 1.506rem + 0.7735vw, 2.125rem);
+  --wcc-size-h3: clamp(1.312rem, 1.235rem + 0.3315vw, 1.5rem);
+  --wcc-size-h4: clamp(1.125rem, 1.099rem + 0.1105vw, 1.188rem);
+  --wcc-size-eyebrow: clamp(0.75rem, 0.7241rem + 0.1105vw, 0.8125rem);
+  --wcc-size-lead: clamp(1.188rem, 1.136rem + 0.221vw, 1.312rem);
+  --wcc-size-body: clamp(1.062rem, 1.037rem + 0.1105vw, 1.125rem);
+  --wcc-size-body-sm: clamp(0.9375rem, 0.9116rem + 0.1105vw, 1rem);
+  --wcc-size-caption: 0.875rem;
+  --wcc-size-nav: clamp(0.9375rem, 1.114rem + -0.221vw, 1.062rem);
+  --wcc-size-button: clamp(0.9375rem, 1.026rem + -0.1105vw, 1rem);
+  --wcc-size-label: 1rem;
+  --wcc-size-input: 1.062rem;
+  --wcc-size-helper: 0.9375rem;
+
+  /* ---- shape ---- */
+  --wcc-radius-none: 0px;
+  --wcc-radius-sm: 4px;
+  --wcc-radius-md: 6px;
+  --wcc-radius-lg: 8px;
+  --wcc-stroke-hairline: 1px;
+  --wcc-stroke-control: 1.5px;
+  --wcc-stroke-frame: 2px;
+  --wcc-stroke-accent-rule: 3px;
+  --wcc-stroke-icon: 1.75px;
+  --wcc-shadow-menu: 0 8px 24px rgba(22, 32, 43, 0.12);
+
+  /* ---- space (8 px grid) ---- */
+  --wcc-space-0: 0px;
+  --wcc-space-1: 4px;
+  --wcc-space-2: 8px;
+  --wcc-space-3: 12px;
+  --wcc-space-4: 16px;
+  --wcc-space-5: 24px;
+  --wcc-space-6: 32px;
+  --wcc-space-7: 40px;
+  --wcc-space-8: 48px;
+  --wcc-space-9: 64px;
+  --wcc-space-10: 80px;
+  --wcc-space-11: 96px;
+  --wcc-space-12: 128px;
+
+  /* ---- layout ---- */
+  --wcc-container-max: 1200px; /* Main content container (plus side padding). */
+  --wcc-container-wide: 1360px; /* Full-bleed sections that still need a limit (gallery). */
+  --wcc-prose-max: 680px; /* Body text column (about 70 characters). */
+  --wcc-form-max: 720px; /* Estimate form column. */
+  --wcc-gutter-mobile: 16px; /* Grid gutter below 768 px. */
+  --wcc-gutter: 24px; /* Grid gutter 768 px and up. */
+  --wcc-page-pad-mobile: 20px; /* Left/right page padding below 768 px. */
+  --wcc-page-pad-tablet: 32px; /* 768–1023 px. */
+  --wcc-page-pad: 40px; /* 1024 px and up. */
+  --wcc-section-y-mobile: 56px; /* Vertical section padding below 768 px. */
+  --wcc-section-y: 96px; /* Vertical section padding 1024 px and up. */
+  --wcc-header-h-mobile: 64px; /* Header height below 1100 px. */
+  --wcc-header-h: 84px; /* Header height 1100 px and up. */
+  --wcc-touch-min: 48px; /* Minimum height of buttons, inputs and tap targets. */
+
+  /* ---- motion ---- */
+  --wcc-duration-fast: 120ms; /* Hover color changes, focus rings */
+  --wcc-duration-base: 200ms; /* Menus, accordions, dropdowns */
+  --wcc-duration-slow: 320ms; /* Mobile menu panel, image fades */
+  --wcc-ease-standard: cubic-bezier(0.2, 0, 0, 1); /* Default easing */
+  --wcc-ease-exit: cubic-bezier(0.4, 0, 1, 1); /* Elements leaving the screen */
+
+  /* ---- z-index ---- */
+  --wcc-z-base: 0;
+  --wcc-z-sticky-header: 100;
+  --wcc-z-dropdown: 200;
+  --wcc-z-menu-overlay: 300;
+  --wcc-z-toast: 400;
+
+  /* ---- icon sizes ---- */
+  --wcc-icon-sm: 16px;
+  --wcc-icon-md: 20px;
+  --wcc-icon-lg: 24px;
+  --wcc-icon-xl: 32px;
+  --wcc-icon-2xl: 40px;
+  /* Breakpoints (CSS variables can't be used in media queries; use these values): sm 480px, md 768px, lg 1024px, nav 1100px, xl 1280px */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --wcc-duration-fast: 0ms; --wcc-duration-base: 0ms; --wcc-duration-slow: 0ms; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+/* Dark surfaces (footer, Night bands): set data-surface="dark" on the container. */
+[data-surface="dark"] {
+  --wcc-text-primary: var(--wcc-white);
+  --wcc-text-heading: var(--wcc-white);
+  --wcc-text-secondary: var(--wcc-gray-300);
+  --wcc-text-accent: var(--wcc-auburn-300);
+  --wcc-text-brand: var(--wcc-gray-300);
+  --wcc-link: var(--wcc-white);
+  --wcc-link-hover: var(--wcc-gray-300);
+  --wcc-border-subtle: rgba(255, 255, 255, 0.16);
+  --wcc-icon: var(--wcc-white);
+  --wcc-focus-ring: var(--wcc-white);
+  background-color: var(--wcc-bg-inverse);
+  color: var(--wcc-text-primary);
+}
+
+/* ---- base ---- */
+body { font-family: var(--wcc-font-body); font-size: var(--wcc-size-body); line-height: 1.65; color: var(--wcc-text-primary); background: var(--wcc-bg-page); }
+h1, h2, h3, h4, .wcc-display { font-family: var(--wcc-font-heading); color: var(--wcc-text-heading); font-weight: 600; margin: 0; }
+a { color: var(--wcc-link); text-underline-offset: 0.18em; } a:hover { color: var(--wcc-link-hover); }
+:focus-visible { outline: var(--wcc-stroke-frame) solid var(--wcc-focus-ring); outline-offset: 2px; }
+
+/* ---- type styles ---- */
+.wcc-display { font-family: var(--wcc-font-heading); font-weight: 600; font-size: var(--wcc-size-display); line-height: 1.08; letter-spacing: -0.015em; color: var(--wcc-text-heading); } /* Homepage hero headline only (one per page). */
+h1, .wcc-h1 { font-family: var(--wcc-font-heading); font-weight: 600; font-size: var(--wcc-size-h1); line-height: 1.12; letter-spacing: -0.01em; color: var(--wcc-text-heading); } /* Page titles on inner pages. */
+h2, .wcc-h2 { font-family: var(--wcc-font-heading); font-weight: 600; font-size: var(--wcc-size-h2); line-height: 1.18; letter-spacing: -0.005em; color: var(--wcc-text-heading); } /* Section headings. */
+h3, .wcc-h3 { font-family: var(--wcc-font-heading); font-weight: 600; font-size: var(--wcc-size-h3); line-height: 1.3; color: var(--wcc-text-heading); } /* Card titles, sub-sections, process step titles. */
+h4, .wcc-h4 { font-family: var(--wcc-font-heading); font-weight: 600; font-size: var(--wcc-size-h4); line-height: 1.35; color: var(--wcc-text-heading); } /* Small headings, FAQ questions, form section titles. */
+.wcc-eyebrow { font-family: var(--wcc-font-heading); font-weight: 600; font-size: var(--wcc-size-eyebrow); line-height: 1.4; letter-spacing: 0.14em; text-transform: uppercase; color: var(--wcc-text-brand); } /* Short label above a heading, e.g. CUSTOM CABINETRY & ARCHITECTURAL MILLWORK. */
+.wcc-lead { font-family: var(--wcc-font-body); font-weight: 400; font-size: var(--wcc-size-lead); line-height: 1.55; color: var(--wcc-text-primary); } /* Intro paragraph under a page title or hero headline. */
+.wcc-body { font-family: var(--wcc-font-body); font-weight: 400; font-size: var(--wcc-size-body); line-height: 1.65; color: var(--wcc-text-primary); } /* All running text. Keep lines to 60–75 characters. */
+.wcc-body-sm { font-family: var(--wcc-font-body); font-weight: 400; font-size: var(--wcc-size-body-sm); line-height: 1.55; color: var(--wcc-text-primary); } /* Card descriptions, footer text, dense lists. */
+.wcc-caption { font-family: var(--wcc-font-body); font-weight: 400; font-size: var(--wcc-size-caption); line-height: 1.45; color: var(--wcc-text-secondary); } /* Image captions such as 'Example of custom built-in cabinetry', metadata. */
+.wcc-nav { font-family: var(--wcc-font-heading); font-weight: 500; font-size: var(--wcc-size-nav); line-height: 1.2; letter-spacing: 0.01em; color: var(--wcc-text-heading); } /* Header navigation links (mobile menu uses the larger size). */
+.wcc-button { font-family: var(--wcc-font-heading); font-weight: 600; font-size: var(--wcc-size-button); line-height: 1.0; letter-spacing: 0.02em; } /* Button labels, Title Case as written in the copy brief. */
+.wcc-label { font-family: var(--wcc-font-body); font-weight: 600; font-size: var(--wcc-size-label); line-height: 1.3; color: var(--wcc-text-heading); } /* Form field labels. */
+.wcc-input { font-family: var(--wcc-font-body); font-weight: 400; font-size: var(--wcc-size-input); line-height: 1.4; color: var(--wcc-text-primary); } /* Text typed into fields (17 px prevents iPhone zoom-in). */
+.wcc-helper { font-family: var(--wcc-font-body); font-weight: 400; font-size: var(--wcc-size-helper); line-height: 1.45; color: var(--wcc-text-secondary); } /* Form helper text and field error messages. */
+
+/* Brand graphic: short auburn rule under a heading */
+/* Width is set by a small script to match the heading text above it (widest line), like the rule in the logo. 120 px is the no-script fallback. */
+.wcc-accent-rule { display: block; width: 120px; max-width: 100%; height: var(--wcc-stroke-accent-rule); background: var(--wcc-accent-rule); border: 0; margin: 16px 0 0; }
+/* Numbers in tables, prices, dimensions: Source Sans 3 figures are tabular by default. */
+.wcc-figures { font-family: var(--wcc-font-body); font-variant-numeric: tabular-nums lining-nums; }
